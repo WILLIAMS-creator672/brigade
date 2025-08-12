@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="MEDIA/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Brigade</title>
+</head>
+
+<body>
+    <main class="relative">
+
+        <header class="padding bg-blue-950 flex items-center justify-between">
+            <div>
+                <img src="MEDIA/logo.png" alt="logo" class="h-10 md:h-20 w-10 md:w-20">
+            </div>
+
+            <div class="flex gap-[20px] font-bold hidden md:flex">
+                <button id="signUp"
+                    class="cursor-pointer border-2 p-2 px-[20px] rounded-[10px] text-white border-[#FEFE00] hover:text-black hover:border-white hover:bg-white">SIGN
+                    UP</button>
+                <button id="LogIn"
+                    class="cursor-pointer bg-[#FEFE00] p-2 px-[20px] rounded-[10px] hover:bg-transparent border-2 border-[#FEFE00] hover:border-[#FEFE00] hover:text-white">LOG
+                    IN</button>
+            </div>
+
+            <button id="mobileMenuTrigger" class="flex md:hidden">
+                <i class="fa-solid fa-bars-staggered text-white text-[20px] cursor-pointer"></i>
+            </button>
+        </header>
+
+        <nav id="navBar"
+            class="padding bg-black font-bold text-[16px] list-none w-fit md:w-full h-screen md:h-fit flex flex-col text-white gap-[60px] md:flex sm:flex-row fixed md:static -left-100">
+            <a href="" class="hover:text-[#FEFE00]">
+                <li>Home</li>
+            </a>
+            <a href="" class="hover:text-[#FEFE00]">
+                <li>Programmes</li>
+            </a>
+            <a href="" class="hover:text-[#FEFE00]">
+                <li>Brigade Shop</li>
+            </a>
+            <a href="" class="hover:text-[#FEFE00]">
+                <li>About Us</li>
+            </a>
+            <a href="" class="hover:text-[#FEFE00]">
+                <li>Contact Us</li>
+            </a>
+
+            <div class="flex gap-[20px] font-bold md:hidden">
+                <button id="signUp"
+                    class="cursor-pointer border-2 p-2 px-[20px] rounded-[10px] text-white border-[#FEFE00] hover:text-black hover:border-white hover:bg-white">SIGN
+                    UP</button>
+                <button id="LogIn"
+                    class="cursor-pointer bg-[#FEFE00] p-2 px-[20px] rounded-[10px] hover:bg-transparent border-2 border-[#FEFE00] hover:border-[#FEFE00] hover:text-white">LOG
+                    IN</button>
+            </div>
+        </nav>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

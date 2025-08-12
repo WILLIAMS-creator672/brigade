@@ -1,0 +1,8 @@
+*{
+    transition: all 0.3s;
+    font-family: Poppins;
+}
+
+.padding{
+    padding: 20px 5vw;
+}
