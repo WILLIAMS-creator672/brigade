@@ -18,13 +18,17 @@
     <title>Brigade</title>
 </head>
 
-<body>
+<body class="">
     <main class="relative">
 
-        <header class="padding bg-blue-950 flex items-center justify-between">
+        <!-- HEADER -->
+
+        <header class="padding bg-blue-950 flex items-center justify-between flex-row-revers">
             <div>
                 <img src="MEDIA/logo.png" alt="logo" class="h-10 md:h-20 w-10 md:w-20">
             </div>
+
+            <!-- SIGN UP/IN -->
 
             <div class="flex gap-[20px] font-bold hidden md:flex">
                 <button id="signUp"
@@ -35,10 +39,22 @@
                     IN</button>
             </div>
 
+            <!-- MOBILE MENU TRIGGER -->
+
             <button id="mobileMenuTrigger" class="flex md:hidden">
                 <i class="fa-solid fa-bars-staggered text-white text-[24px] cursor-pointer"></i>
             </button>
+
+            <!-- USER -->
+            
+            <div class="hidden">
+                <button class="text-[25px] text-color cursor-pointer border-2 border-white h-[50px] w-[50px] rounded-[50%] hover:bg-neutral-50 group">
+                    <i class="fa-solid fa-user group-hover:text-black"></i>
+                </button>
+            </div>
         </header>
+
+        <!-- NAV -->
 
         <nav id="navBar"
             class="padding bg-black font-bold text-[16px] list-none w-fit md:w-full h-screen md:h-fit flex flex-col text-white gap-[60px] md:flex sm:flex-row fixed md:static -left-100">
@@ -66,7 +82,23 @@
                     class="cursor-pointer bg-[#FEFE00] p-2 px-[20px] rounded-[10px] text-black hover:bg-transparent border-2 border-[#FEFE00] hover:border-[#FEFE00] hover:text-white">LOG
                     IN</button>
             </div>
+
+            
         </nav>
+
+
+
+        <section class="hero-image bg-neutral-400 h-screen md:h-[420px] flex flex-col items-center justify-center">
+
+            <h1 class="font-bold text-center text-[18px] md:text-[40px] text-white">Advancing <span class="text-color">Christ</span> Kingdom</h1> <br>
+
+            <p class="text-[17px] md:text-[20px] text-center text-white">Join us in the advancement of Christ' Kingdom according to our object</p>
+
+            <div class="pt-[100px]">
+                <button class="bg-[#FC0000] padding rounded-[15px] text-white text-[16px] font-bold cursor-pointer border-2 border-[#FC0000] hover:bg-transparent">GET STARTED &nbsp; &nbsp; <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        </section>
 
     </main>
 

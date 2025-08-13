@@ -1,8 +1,46 @@
-*{
+* {
+    /* padding: 0; */
+    /* margin: 0; */
     transition: all 0.3s;
     font-family: Poppins;
 }
 
-.padding{
+.padding {
     padding: 20px 5vw;
+}
+
+.hero-image {
+    background-image: url(MEDIA/hero-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text-color {
+    color: #ecec40;
+}
+
+.form{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 10px gray, -5px -5px 10px gray;
+}
+
+.form input {
+    padding: 10px;
+    padding-right: 100px;
+    /* outline: none; */
+    border: 1px solid #ecec40;
+}
+
+.form i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
 }
