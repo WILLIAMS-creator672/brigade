@@ -26,12 +26,12 @@
 
         <!-- HEADER -->
 
-        <header class="padding bg-blue-950 flex items-center justify-between sticky top-0">
-            <div>
-                <img src="MEDIA/logo.png" alt="logo" class="h-10 md:h-20 w-10 md:w-20">
+        <header class="padding bg-blue-950 flex items-center justify-between sticky top-0 z-20">
+            <div class="">
+                <img src="MEDIA/logo.png" alt="logo" class="h-10 md:h-20 w-10 md:w-20 ">
             </div>
 
-            <!-- SIGN UP/IN -->
+            <!-- SIGN UP/IN BUTTON DIV-->
 
             <div class="flex gap-[20px] font-bold hidden md:flex">
                 <button id="signUp"
@@ -44,9 +44,10 @@
 
             <!-- MOBILE MENU TRIGGER -->
 
-            <button id="mobileMenuTrigger" class="flex md:hidden">
-                <i class="fa-solid fa-bars-staggered text-white text-[24px] cursor-pointer"></i>
-            </button>
+                <button id="mobileMenuTrigger" class="flex flex-col md:hidden relative cursor-pointer z-60">
+                    <i class="fa-solid fa-bars-staggered text-white text-[24px]"></i>
+                    <i class="fa-solid fa-xmark text-white text-[24px] center scale-0"></i>
+                </button>
 
             <!-- USER -->
 
@@ -61,7 +62,10 @@
         <!-- NAV -->
 
         <nav id="navBar"
-            class="padding bg-black font-bold text-[16px] list-none w-fit md:w-full h-screen md:h-fit flex flex-col text-white gap-[60px] md:flex md:flex-row fixed md:static -left-100">
+            class="paddin p-[40px] z-30 bg-black font-bold text-[16px] list-none w-fit md:w-full h-screen md:h-fit flex flex-col text-white gap-[50px] md:flex md:flex-row fixed top-0 md:static  -left-100">
+
+            <img src="MEDIA/logo.png" alt="logo" class="h-10 md:h-20 w-10 md:w-20 flex md:hidden">
+
             <a href="" class="hover:text-[#FEFE00]">
                 <li>Home</li>
             </a>
@@ -117,7 +121,7 @@
         <section class="section-two padding">
             <div id="programmes"
                 class="programmeDivs w-fit flex flex-col md:flex md:flex-row border- text-center items-center justify-between gap-[50px]">
-                <div class="flex flex-col items-center gap-[15px]">
+                <div class="programme-card left-card flex flex-col items-center gap-[15px]">
                     <h1 class="text-[20px] font-bold">PHOTOGRAPHY WORKSHOP</h1>
                     <img src="MEDIA/photo=shop.jpg" alt="" class="w[80%] h-auto">
                     <button class="">
@@ -125,7 +129,7 @@
                         <p>READ ABOUT</p>
                     </button>
                 </div>
-                <div class="flex flex-col items-center gap-[15px]">
+                <div class="programme-card bottom-card flex flex-col items-center gap-[15px]">
                     <h1 class="text-[20px] font-bold">CAMP</h1>
                     <img src="MEDIA/camp-img.jpg" alt="" class="w[80%] h-auto">
                     <button class="">
@@ -133,7 +137,7 @@
                         <p>READ ABOUT</p>
                     </button>
                 </div>
-                <div class="flex flex-col items-center gap-[15px]">
+                <div class="programme-card right-card flex flex-col items-center gap-[15px]">
                     <h1 class="text-[20px] font-bold">SPELLING COMPETITION</h1>
                     <img src="MEDIA/spelling-compete.jpg" alt="" class="w[80%] h-auto">
                     <button class="">
@@ -150,7 +154,7 @@
         </section>
 
         <!-- MODALS -->
-
+<div id="hamburgerOverlay" class="hamburgerOverlay hidden"></div>
         <div id="overlay" class="hidden"></div>
 
         <div class="modalWrapper">
