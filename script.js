@@ -81,7 +81,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, {
     threshold: 0.5, // Trigger when 50% of the element is in view
-    rootMargin: '0px 0px -20% 0px', // Trigger when the element is about to enter the viewport
+    rootMargin: '0px 0px -20px 0px', // Trigger when the element is about to enter the viewport
 });
 
 // Target each programme-card element for the scroll animation
