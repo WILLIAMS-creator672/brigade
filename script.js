@@ -26,21 +26,21 @@ let aboutSpellingButton = document.querySelectorAll('#programmes button')[2]
 let overlay = document.getElementById('overlay')
 
 aboutPhotograhButton.addEventListener('click', () => {
-    programmesAboutModal.classList.add('scale-150')
+    programmesAboutModal.classList.toggle('scale-150')
     programmesHeading.innerHTML = 'PHOTOGRAPH WORKSHOP'
     programmesAboutMessage.innerText = "This is organized by the State officials in other to get good photographs of the Boys' for remebrance purposes"
     overlay.classList.toggle('hidden')
 })
 
 aboutCampButton.addEventListener('click', () => {
-    programmesAboutModal.classList.add('scale-150')
+    programmesAboutModal.classList.toggle('scale-150')
     programmesHeading.innerHTML = 'CAMP'
     programmesAboutMessage.innerText = 'Every year we organize a state training camp for the members of the Boys Brigade to expose them mentally, spiritually, socially and physically'
     overlay.classList.toggle('hidden')
 })
 
 aboutSpellingButton.addEventListener('click', () => {
-    programmesAboutModal.classList.add('scale-150')
+    programmesAboutModal.classList.toggle('scale-150')
     programmesHeading.innerHTML = 'SPELLING COMPETITION'
     programmesAboutMessage.innerText = "The Brigade really focus on the Boys so we organize spellings competitions for all the sections in the Brigade "
     overlay.classList.toggle('hidden')
@@ -48,6 +48,6 @@ aboutSpellingButton.addEventListener('click', () => {
 
 overlay.addEventListener('click', () => {
     overlay.classList.add('hidden')
-   programmesAboutModal.classList.remove('scale-150')
+   programmesAboutModal.classList.toggle('scale-150')
 })
 
