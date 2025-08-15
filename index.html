@@ -44,10 +44,10 @@
 
             <!-- MOBILE MENU TRIGGER -->
 
-                <button id="mobileMenuTrigger" class="flex flex-col md:hidden relative cursor-pointer z-60">
-                    <i class="fa-solid fa-bars-staggered text-white text-[24px]"></i>
-                    <i class="fa-solid fa-xmark text-white text-[24px] center scale-0"></i>
-                </button>
+            <button id="mobileMenuTrigger" class="flex flex-col md:hidden relative cursor-pointer z-60">
+                <i class="fa-solid fa-bars-staggered text-white text-[24px]"></i>
+                <i class="fa-solid fa-xmark text-white text-[24px] center scale-0"></i>
+            </button>
 
             <!-- USER -->
 
@@ -100,7 +100,7 @@
         <section
             class="hero-image padding bg-neutral-400 h-[800px] md:h-[420px] flex flex-col items-center justify-center">
 
-            <h1 class="font-bold text-center text-[18px] md:text-[40px] text-white">ADVANCING<span class="text-color">
+            <h1 id="typingText" class="typingText font-bold text-center text-[18px] md:text-[40px] text-white">ADVANCING<span class="text-color">
                     CHRIST</span> KINGDOM</h1> <br>
 
             <h3 class="text-white text-[17px] md:text-[20px] text-center">Welcome to the Boys' Brigade Nigeria - Akwa
@@ -118,11 +118,14 @@
 
         <!-- SECTION TWO -->
 
-        <section class="section-two padding">
+        <section class="section-two padding flex flex-col items-center gap-[50px]">
+
+            <h1 class="text-[20px] md:text-[30px] font-bold">OUR PROGRAMMES</h1>
+
             <div id="programmes"
                 class="programmeDivs w-fit flex flex-col md:flex md:flex-row border- text-center items-center justify-between gap-[50px]">
                 <div class="programme-card left-card flex flex-col items-center gap-[15px]">
-                    <h1 class="text-[20px] font-bold">PHOTOGRAPHY WORKSHOP</h1>
+                    <h1 class="text-[16px] md:text-[20px] font-bold">PHOTOGRAPHY WORKSHOP</h1>
                     <img src="MEDIA/photo=shop.jpg" alt="" class="w[80%] h-auto">
                     <button class="">
                         <i class="fa-brands fa-readme "></i>
@@ -130,7 +133,7 @@
                     </button>
                 </div>
                 <div class="programme-card bottom-card flex flex-col items-center gap-[15px]">
-                    <h1 class="text-[20px] font-bold">CAMP</h1>
+                    <h1 class="text-[16px] md:text-[20px] font-bold">CAMP</h1>
                     <img src="MEDIA/camp-img.jpg" alt="" class="w[80%] h-auto">
                     <button class="">
                         <i class="fa-brands fa-readme "></i>
@@ -138,31 +141,45 @@
                     </button>
                 </div>
                 <div class="programme-card right-card flex flex-col items-center gap-[15px]">
-                    <h1 class="text-[20px] font-bold">SPELLING COMPETITION</h1>
+                    <h1 class="text-[16px] md:text-[20px] font-bold">SPELLING COMPETITION</h1>
                     <img src="MEDIA/spelling-compete.jpg" alt="" class="w[80%] h-auto">
                     <button class="">
                         <i class="fa-brands fa-readme "></i>
                         <p>READ ABOUT</p>
                     </button>
                 </div>
-                <!-- <div></div>
-                <div></div> -->
 
+            </div>
 
+            <div
+                class="programmeDivs flex flex-col md:flex md:flex-row border- text-center w-fit items-center justify-between gap-[50px]">
+                <div class="flex flex-col items-center gap-[15px]">
+                    <h1 class="text-[16px] md:text-[20px] font-bold">PATRONS' CONFERENCE</h1>
+                    <img src="MEDIA/patron.png" alt="" class="w[80%] h-auto">
+                </div>
+
+                <div class="flex flex-col items-center gap-[15px]">
+                    <h1 class="text-[16px] md:text-[20px] font-bold">ANNUAL COUNCIL MEETING (ACM)</h1>
+                    <img src="MEDIA/acm.png" alt="" class="w[80%] h-auto">
+                </div>
             </div>
 
         </section>
 
         <!-- MODALS -->
-<div id="hamburgerOverlay" class="hamburgerOverlay hidden"></div>
+        <div id="hamburgerOverlay" class="hamburgerOverlay hidden"></div>
         <div id="overlay" class="hidden"></div>
 
         <div class="modalWrapper">
 
             <article id="programmesModal" class="centerModal bg-white scale-0">
-                <i class="fa-solid fa-circle-exclamation text-neutral-600 text-[15px] md:text-[20px]"></i>
+                <div class="border- w-full flex justify-between">
+                    <i class="fa-solid fa-circle-exclamation text-colo text-neutral-600 text-[15px] md:text-[20px]"></i>
+                    <i id="closeAboutProgrammesModalButton"
+                        class="fa-solid fa-xmark cursor-pointer bg-[#FC0000] border-2 border-[#FC0000] hover:bg-transparent hover:text-black text-white rounded-[5px]"></i>
+                </div>
                 <h2 id="programmeHeading" class="text-[13px] md:text-[18px] font-bold"></h2>
-                <p id="programmeAboutMessage" class="text-[11px] md:text-[14px]"></p>
+                <p id="programmeAboutMessage" class="text-[11px] md:text-[12px]"></p>
             </article>
 
         </div>

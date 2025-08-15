@@ -50,13 +50,14 @@
     box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
     background: white;
     border-radius: 8px;
-    padding: 20px 40px;
+    padding: 20px;
     text-align: center;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    width: fit-content;
 }
 
 #overlay {
@@ -123,6 +124,63 @@
 
 .programmeDivs button:hover {
     background-color: #b61818;
+}
+
+/* TYPING EFFECT */
+
+.typingText {
+    /* border: 2px solid white; */
+    /* color: gold; */
+    /* font-size: 55px; */
+    /* font-weight: bold; */
+    border-right: 1px solid #ecec40;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(25) forwards, blink 1s infinite;
+
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+
+    }
+
+    100% {
+        width: 630px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    @keyframes typing {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 300px;
+        }
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+
+    to {
+        border-color: gold;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .sec-one .heading h1 {
+        font-size: 30px;
+    }
 }
 
 

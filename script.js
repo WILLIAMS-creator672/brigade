@@ -23,7 +23,6 @@ hamburgerOverlay.addEventListener('click', () => {
 
 
 
-
 // PROGRAMMES ABOUT MODAL
 
 let programmesAboutModal = document.getElementById('programmesModal')
@@ -38,7 +37,8 @@ let aboutCampButton = document.querySelectorAll('#programmes button')[1]
 
 let aboutSpellingButton = document.querySelectorAll('#programmes button')[2]
 
-// LISTENERS
+let closeAboutProgrammesButton = document.getElementById('closeAboutProgrammesModalButton')
+
 
 aboutPhotograhButton.addEventListener('click', () => {
     programmesAboutModal.classList.toggle('scale-150')
@@ -61,9 +61,14 @@ aboutSpellingButton.addEventListener('click', () => {
     overlay.classList.toggle('hidden')
 })
 
-overlay.addEventListener('click', () => {
+closeAboutProgrammesButton.addEventListener('click', () => {
     overlay.classList.add('hidden')
    programmesAboutModal.classList.toggle('scale-150')
+})
+
+overlay.addEventListener('click', () => {
+    overlay.classList.add('hidden')
+    programmesAboutModal.classList.toggle('scale-150')
 })
 
 // PROGRAMME CARDS SLIDE IN EFFECT
