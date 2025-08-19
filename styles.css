@@ -69,7 +69,28 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 5px 5px 10px gray, -5px -5px 10px gray;
+    /* box-shadow: 5px 5px 10px gray, -5px -5px 10px gray; */
+    border: 1px solid #ecec40;
+}
+
+.form input {
+    padding: 10px;
+    padding-right: 100px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.form i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.form input::placeholder{
+    color: #888;
 }
 
 /* MODALS */
@@ -115,21 +136,6 @@
     width: 100vw;
     /* background-color: rgba(0, 0, 0, 0.8); */
 
-}
-
-.form input {
-    padding: 10px;
-    padding-right: 100px;
-    /* outline: none; */
-    border: 1px solid #ecec40;
-}
-
-.form i {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #888;
 }
 
 .section-two {
