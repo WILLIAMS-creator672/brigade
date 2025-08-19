@@ -5,9 +5,22 @@
     font-family: Poppins;
 }
 
+
+/* PADDINGS */
+
 .padding {
     padding: 20px 5vw;
 }
+
+.button-padding {
+    padding: 10px 20px;
+}
+
+.footer-padding {
+    padding: 50px 5vw;
+}
+
+/* BACKGROUNDS */
 
 .hero-image {
     background-image: url(MEDIA/hero-img.png);
@@ -18,15 +31,37 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+.logo-background {
+    /* background-image: url(MEDIA/logo.png); */
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.904), rgba(0, 0, 0, 0.801)), url(MEDIA/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: darken;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    animation: spin 1s infinite;
+}
+
+@keyframes spin {
+    0% {
+       
+    }
+
+ 50% {}
+
+    100% {
+    }
+}
+
 .text-color {
     color: #ecec40;
 }
 
-.center{
+.center {
     position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .form {
@@ -36,6 +71,8 @@
     transform: translate(-50%, -50%);
     box-shadow: 5px 5px 10px gray, -5px -5px 10px gray;
 }
+
+/* MODALS */
 
 .modalWrapper {
     position: fixed;
@@ -47,7 +84,7 @@
 
 .centerModal {
     transform-origin: center center;
-    box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+    box-shadow: 2px 2px 5px rgb(70, 69, 69), -2px -2px 5px rgb(85, 84, 84);
     background: white;
     border-radius: 8px;
     padding: 20px;
@@ -70,14 +107,14 @@
     z-index: 40;
 }
 
-.hamburgerOverlay{
+.hamburgerOverlay {
     position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
-        /* background-color: rgba(0, 0, 0, 0.8); */
-        
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+
 }
 
 .form input {

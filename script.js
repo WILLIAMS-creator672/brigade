@@ -71,6 +71,53 @@ overlay.addEventListener('click', () => {
     programmesAboutModal.classList.toggle('scale-150')
 })
 
+
+
+let redirectToAbout = document.getElementById('aboutUsButton')
+
+redirectToAbout.addEventListener('click', () => {
+    window.location.href = 'about.html'
+})
+
+
+// FOOTER DATE
+
+let footerYear = document.getElementById('footer-year');
+
+let currentYear = new Date().getFullYear();
+
+footerYear.textContent = currentYear;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // PROGRAMME CARDS SLIDE IN EFFECT
 
 // Function to observe when the elements come into view
@@ -98,4 +145,6 @@ const rightCard = document.querySelector('.right-card');
 observer.observe(leftCard);
 observer.observe(bottomCard);
 observer.observe(rightCard);
+
+
 

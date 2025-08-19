@@ -26,7 +26,7 @@
 
         <!-- HEADER -->
 
-        <header class="padding bg-blue-950 flex items-center justify-between sticky top-0 z-20">
+        <header class="padding bg-blue-950 border-b-1 border-b-white flex items-center justify-between sticky top-0 z-20">
             <div class="">
                 <img src="MEDIA/logo.png" alt="logo" class="h-10 md:h-20 w-10 md:w-20 ">
             </div>
@@ -100,7 +100,8 @@
         <section
             class="hero-image padding bg-neutral-400 h-[800px] md:h-[420px] flex flex-col items-center justify-center">
 
-            <h1 id="typingText" class="typingText font-bold text-center text-[18px] md:text-[40px] text-white">ADVANCING<span class="text-color">
+            <h1 id="typingText" class="typingText font-bold text-center text-[18px] md:text-[40px] text-white">
+                ADVANCING<span class="text-color">
                     CHRIST</span> KINGDOM</h1> <br>
 
             <h3 class="text-white text-[17px] md:text-[20px] text-center">Welcome to the Boys' Brigade Nigeria - Akwa
@@ -116,7 +117,7 @@
 
         </section>
 
-        <!-- SECTION TWO -->
+        <!-- SECTION TWO - PROGRAMMES -->
 
         <section class="section-two padding flex flex-col items-center gap-[50px]">
 
@@ -166,6 +167,101 @@
 
         </section>
 
+        <!-- SECTION THREE - ABOUT US BRIEF-->
+
+        <section
+            class="logo-background padding h-[500px] mt-[150px] flex flex-col justify-center items-center gap-[50px] text-white ">
+            <h1 class="border-1 border-[#FEFE00] button-padding  rounded-[5px]">- <span
+                    class="text-[22px] md:text-[30px] font-bold rounded-[10px]">ABOUT US</span> -</h1>
+
+            <p class="text-[15px] md:text-[20px] text-center">On 23rd September, 1987, the Military Government of
+                General Ibrahim Badamosi Babangida through a Nation -
+                Wide Broadcast
+                created Akwa Ibom State out of the Old Cross River State. By that pronouncements ,all Machinery of
+                Government and
+                Organizations were transferred to the new State.
+            </p>
+
+            <button id="aboutUsButton"
+                class="bg-[#FC0000] button-padding rounded-[15px] text-white text-[16px] font-bold cursor-pointer border-2 border-[#FC0000] hover:bg-transparent">READ
+                MORE <i class="fa-solid fa-arrow-right"></i></button>
+
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer class="footer-padding bg-[#162556]">
+
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-[80px] md:gap-[5px]">
+
+
+                <div class="flex flex-col gap-[100px]">
+                    <div class="flex flex-col gap-[10px] items-center w-fit">
+                        <div class="flex items-center gap-[10px]">
+                            <img src="MEDIA/logo.png" alt="logo" class="h-5 md:h-10 w-5 md:w-10 ">
+                            <h1 class=" text-[#FEFE00] text-[20px] font-bold">BBNAKSC</h1>
+                        </div>
+
+                        
+                    </div>
+
+
+                    <div class="flex flex-col items-center gap-[10px] w-fit">
+                        <h2 class="text-[#FEFE00] text-[20px] font-bold"><i class="fa-solid fa-share text-[#FEFE00]"></i>
+                            Our Socials </h2>
+
+                        <div class="text-[25px] text-white flex gap-[20px]">
+                            <a href="" class=""><i class="fa-brands fa-facebook hover:text-[#FEFE00]"></i></a>
+
+                            <a href="" class=""><i class="fa-brands fa-instagram hover:text-[#FEFE00] "></i></a>
+
+                            <a href="" class=""><i class="fa-brands fa-whatsapp hover:text-[#FEFE00] "></i></a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=" flex flex-col">
+                    <h2 class="text-[#FEFE00] text-[20px] font-bold">Links</h2> <br>
+
+                    <ul class="flex flex-col gap-[20px] text-white">
+                        <li><a href="" class="hover:text-[#FEFE00]">Home</a></li>
+                        <li><a href="" class="hover:text-[#FEFE00]">About Us</a></li>
+                        <li><a href="" class="hover:text-[#FEFE00]">Brigade Shop</a></li>
+                        <li><a href="" class="hover:text-[#FEFE00]">Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+                <div class=" flex flex-col">
+                    <h2 class="text-[#FEFE00] text-[20px] font-bold">Contact Us </h2> <br>
+
+                    <ul class="flex flex-col gap-[20px] text-white">
+                        <li><a href="mailto:" class="hover:text-[#FEFE00]"><i class="fa-solid fa-envelope"></i> @gmail</a></li>
+                        <li><a href="tel:+2347035013154" class="hover:text-[#FEFE00]"><i class="fa-solid fa-phone"></i> +2347035013154</a></li>
+                        <li><address><i class="fa-solid fa-location-dot"></i> 642 Oron Road, Uyo, Akwa Ibom State, Nigeria</address></li>
+                        <li><a href="" class="hover:text-[#FEFE00]"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+
+            <p class="text-[12px] text-white text-center mt-[70px]">@ <span id="footer-year"></span> All rights Reserved</p>
+
+        </footer>
+
+
+
+
+
+
+
+
+
         <!-- MODALS -->
         <div id="hamburgerOverlay" class="hamburgerOverlay hidden"></div>
         <div id="overlay" class="hidden"></div>
@@ -174,9 +270,9 @@
 
             <article id="programmesModal" class="centerModal bg-white scale-0">
                 <div class="border- w-full flex justify-between">
-                    <i class="fa-solid fa-circle-exclamation text-colo text-neutral-600 text-[15px] md:text-[20px]"></i>
+                    <i class="fa-solid fa-circle-exclamation text-colo text-neutral-600 text-[12px] md:text-[16px]"></i>
                     <i id="closeAboutProgrammesModalButton"
-                        class="fa-solid fa-xmark cursor-pointer bg-[#FC0000] border-2 border-[#FC0000] hover:bg-transparent hover:text-black text-white rounded-[5px]"></i>
+                        class="fa-solid fa-xmark cursor-pointer text-[12px] md:text-[16px] bg-[#FC0000] border-2 border-[#FC0000] hover:bg-transparent hover:text-black text-white rounded-[5px]"></i>
                 </div>
                 <h2 id="programmeHeading" class="text-[13px] md:text-[18px] font-bold"></h2>
                 <p id="programmeAboutMessage" class="text-[11px] md:text-[12px]"></p>
