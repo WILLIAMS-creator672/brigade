@@ -43,14 +43,11 @@
 }
 
 @keyframes spin {
-    0% {
-       
-    }
+    0% {}
 
- 50% {}
+    50% {}
 
-    100% {
-    }
+    100% {}
 }
 
 .text-color {
@@ -71,14 +68,27 @@
     transform: translate(-50%, -50%);
     /* box-shadow: 5px 5px 10px gray, -5px -5px 10px gray; */
     border: 1px solid #ecec40;
+    border-radius: 20px;
 }
 
 .form input {
     padding: 10px;
-    padding-right: 100px;
+    padding-right: 80px;
     outline: none;
     border: 1px solid white;
     border-radius: 10px;
+    color: white;
+}
+
+.form input:focus {
+    border: 1px solid #ecec40;
+}
+
+@media screen and (min-width:768px) {
+    .form input {
+        padding-right: 200px;
+    }
+
 }
 
 .form i {
@@ -89,8 +99,65 @@
     color: #888;
 }
 
-.form input::placeholder{
+.form input::placeholder {
     color: #888;
+}
+
+.signInForm {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* box-shadow: 5px 5px 10px gray, -5px -5px 10px gray; */
+    border: 1px solid #ecec40;
+    border-radius: 20px;
+}
+
+.signInForm i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    /* color: white; */
+}
+
+.signInForm input {
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 45px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+.signInForm input:focus {
+    border: 1px solid #ecec40;
+}
+
+@media screen and (min-width:768px) {
+    .signInForm input {
+        padding-right: 165px;
+    }
+
+}
+
+.signInForm input::placeholder {
+    color: #888;
+}
+
+.active {
+    cursor: pointer;
+}
+
+.disabled {
+    background-color: #0f1c47;
+    cursor: not-allowed;
+    opacity: 0.7;
+    border: 1px solid #0f1c47;
+    pointer-events: none;
+    color: grey;
 }
 
 /* MODALS */
@@ -116,6 +183,28 @@
     justify-content: space-between;
     gap: 20px;
     width: fit-content;
+}
+
+.errorModal {
+    position: fixed;
+    left: 20px;
+    /* top: 50%; */
+    bottom: 10px;
+    background-color: white;
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.errorModalRemove {
+    position: fixed;
+    left: -200px;
+
+    bottom: 10px;
+background-color: white;
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #overlay {
@@ -167,6 +256,12 @@
 
 .programmeDivs button:hover {
     background-color: #b61818;
+}
+
+/* BOX SHADOW */
+
+.box-shadow{
+    box-shadow: 2px 2px 5px rgb(70, 69, 69), -2px -2px 5px rgb(85, 84, 84);
 }
 
 /* TYPING EFFECT */
