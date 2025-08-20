@@ -146,7 +146,7 @@ function showSpecialButtonIfAllowed() {
         let parsedData = JSON.parse(savedData);
         headerButtonContainer.classList.add('hidden')
         hamburgerButtonContainer.classList.add('hidden');
-        hamburgerUserName.innerText = parsedData.fullName
+        hamburgerUserName.innerHTML = `<i class="fa-solid fa-user text-[#FEFE00] text-[18px]"></i>${parsedData.fullName}`
         headerUserName.innerText = parsedData.fullName
 
         // USER ACCOUNT BUTTON RESPONSIVENESS

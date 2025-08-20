@@ -84,7 +84,7 @@
     border: 1px solid #ecec40;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 820px) {
     .form input {
         padding-right: 200px;
     }
@@ -136,7 +136,7 @@
     border: 1px solid #ecec40;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 820px) {
     .signInForm input {
         padding-right: 165px;
     }
