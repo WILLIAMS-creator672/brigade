@@ -73,8 +73,7 @@
 
 .form input {
     padding: 10px;
-    padding-right: 50px;
-    /* padding-right: 80px; */
+    padding-right: 80px;
     outline: none;
     border: 1px solid white;
     border-radius: 10px;
@@ -87,7 +86,7 @@
 
 @media screen and (min-width: 820px) {
     .form input {
-        padding-right: 200px;
+        /* padding-right: 200px; */
     }
 
 }
@@ -126,8 +125,7 @@
 .signInForm input {
     padding: 10px;
     padding-left: 35px;
-    /* padding-right: 45px; */
-    padding-right: 30px;
+    padding-right: 45px;
     outline: none;
     border: 1px solid white;
     border-radius: 10px;
@@ -140,7 +138,7 @@
 
 @media screen and (min-width: 820px) {
     .signInForm input {
-        padding-right: 165px;
+        /* padding-right: 165px; */
     }
 
 }
