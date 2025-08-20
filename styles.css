@@ -87,6 +87,7 @@
 @media screen and (min-width: 820px) {
     .form input {
         /* padding-right: 200px; */
+        padding-right: 20px;
     }
 
 }
@@ -139,6 +140,7 @@
 @media screen and (min-width: 820px) {
     .signInForm input {
         /* padding-right: 165px; */
+        padding-right: 20px;
     }
 
 }
